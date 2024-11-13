@@ -1,16 +1,14 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-<<<<<<< HEAD
-import java.util.Scanner;
-=======
->>>>>>> origin/main
 
-public class calculadora {
+import java.util.Scanner;
+
+
+public class calculadora{
     private JPanel panelMain;
 
-<<<<<<< HEAD
-=======
+
 
     private JTextField txtPrimeiroValor;
 
@@ -18,12 +16,12 @@ public class calculadora {
 
     private JButton btnSomar;
 
->>>>>>> origin/main
+
     private JTextField txtResultado;
 
     private JButton btnLimpar;
     private JPanel getPanelMain;
-<<<<<<< HEAD
+
     private JButton btn01;
     private JButton btn02;
     private JButton btn03;
@@ -38,7 +36,7 @@ public class calculadora {
     private JButton btnsubtracao;
     private JButton btndivisao;
     private JButton btnmultiplicacao;
-    private JButton btnSomar;
+    private JButton btnsomar;
     private JButton btnIgual;
 
     public calculadora(){
@@ -47,33 +45,68 @@ public class calculadora {
             public void actionPerformed(ActionEvent e) {
 
                 resultado.setText(resultado.getText() + "1");
-=======
-
-    public calculadora(){
-        btnSomar.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-                Integer primeiro = Integer.valueOf(txtPrimeiroValor.getText());
-                Integer segundo = Integer.valueOf(txtSegundoValor.getText());
-
-                //processo
-                Integer soma = primeiro + segundo;
-
-                //Mandei para tela o resutado
-                txtResultado.setText(soma.toString());
->>>>>>> origin/main
-
-
 
             }
         });
-<<<<<<< HEAD
-       // btn02.addActionListener(new ActionListener() {
+        btn02.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
 
-      //  })
-=======
->>>>>>> origin/main
+                resultado.setText(resultado.getText()+"2");
+
+            }
+        });
+        btn03.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                resultado.setText(resultado.getText()+"3");
+            }
+        });
+        btn04.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                resultado.setText(resultado.getText()+"4");
+            }
+        });
+        btn05.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                resultado.setText(resultado.getText()+"5");
+            }
+        });
+        btn06.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                resultado.setText(resultado.getText()+"6");
+            }
+        });
+        btn07.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                resultado.setText(resultado.getText()+"8");
+            }
+        });
+        btn09.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                resultado.setText(resultado.getText()+"9");
+            }
+        });
+        btn0.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                resultado.setText(resultado.getText()+"0");
+            }
+        });
+
+
     }
 
 
